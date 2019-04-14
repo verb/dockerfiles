@@ -10,4 +10,4 @@ RUN apk --no-cache add ca-certificates
 COPY --from=builder /usr/local/bin/udpxy /usr/local/bin/udpxrec /usr/local/bin/
 
 USER nobody
-CMD ["/usr/local/bin/udpxy", "-T", "-p", "4000"]
+CMD ["/usr/local/bin/udpxy", "-T", "-p", "4022"]
